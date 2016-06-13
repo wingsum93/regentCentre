@@ -1,2 +1,10 @@
-/build
+
+.gradle/
+.idea/
+app/app.iml
+/build/
 app/build/
+
+#locl sdk
+local.properties
+RegentCentre.iml
