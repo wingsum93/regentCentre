@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.Material.Light">
-	</style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+         Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="android:Theme.Holo.Light.NoActionBar"/>
+    <style name="AppTheme.Dialog" parent="@android:style/Theme.Holo.Light.Dialog"/>
+
+    <style name="Ericho1" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimaryDark">@color/purple2</item>
+        <item name="colorAccent">@color/pink1</item>
+        <item name="android:colorBackground">@color/orange_fade1</item>
+        <item name="android:colorForeground">@color/red</item>
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
+    </style>
+    <!--<style name="Ericho1.NoTitleBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
 </resources>
