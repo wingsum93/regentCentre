@@ -20,4 +20,7 @@ public class LocationCheckingSer extends Service {
             return LocationCheckingSer.this;
         }
     }
+
+
+
 }

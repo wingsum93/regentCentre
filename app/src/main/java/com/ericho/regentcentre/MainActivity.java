@@ -1,15 +1,17 @@
 package com.ericho.regentcentre;
 
-import android.app.*;
+
 import android.os.*;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.*;
-import android.view.View.*;
-import android.view.*;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
 
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
 	private Button enterButton,aboutButton;
     @Override
@@ -18,17 +20,27 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.main);
 		ButterKnife.bind(this);
 		Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-		setActionBar(toolbar);
-		
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		
 	}
-	private OnClickListener mainListener=new OnClickListener(){
 
-		@Override
-		public void onClick(View p1){
-			// TODO: Implement this method
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()){
+			case android.R.id.home:
+				finish();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
+	}
+
+	@Override
+	public void onClick(View p1){
+		// TODO: Implement this method
+	}
 
 		
-	};
+
 }
