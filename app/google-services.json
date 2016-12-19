@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "295388975905",
+    "firebase_url": "https://regentcentre-97861.firebaseio.com",
+    "project_id": "regentcentre-97861",
+    "storage_bucket": "regentcentre-97861.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295388975905:android:11645a6295fce835",
+        "android_client_info": {
+          "package_name": "com.ericho.regentcentre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295388975905-tqvg7uiec51fiks4p0ani87nlpklqcrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfEO9MEDZW1p7Lwxkw-4X3hSy5Noz5lQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
