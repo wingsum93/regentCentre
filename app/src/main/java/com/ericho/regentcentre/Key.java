@@ -8,6 +8,7 @@ public class Key {
 
 
     public static final String regid = "regid";
+    public static final String pref_name = "pref";
 
 
 }
