@@ -11,7 +11,7 @@ import com.ericho.regentcentre.Key;
 
 public class PrefUtil {
     public static void setRegId(Context context, String regid){
-        getPreference(context).edit().putString(Key.regid,regid).apply();
+        getPreference(context).edit().putString(Key.regId,regid).apply();
     }
     public static SharedPreferences getPreference(Context context){
         return context.getSharedPreferences(context.getPackageName(),Context.MODE_PRIVATE);

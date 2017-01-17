@@ -7,7 +7,7 @@ package com.ericho.regentcentre;
 public class Key {
 
 
-    public static final String regid = "regid";
+    public static final String regId = "regId";
     public static final String pref_name = "pref";
 
 

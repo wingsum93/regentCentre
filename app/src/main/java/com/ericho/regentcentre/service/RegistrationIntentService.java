@@ -65,7 +65,7 @@ public class RegistrationIntentService extends IntentService {
         //Save back to preference
         SharedPreferences sharedPreferences = this.getSharedPreferences(this.getPackageName(), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(Key.regid, token);
+        editor.putString(Key.regId, token);
         editor.apply();
     }
 }
