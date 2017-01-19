@@ -30,13 +30,9 @@ public class LocationViewAct extends BaseAct implements OnMapReadyCallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_location_view);
         setMyView();
-        setListener();
-    }
-
-    @Override
-    public void setListener() {
 
     }
+
 
     @Override
     public void setMyView() {

@@ -1,4 +1,4 @@
-package com.ericho.regentcentre;
+package com.ericho.regentcentre.service;
 
 import android.app.Service;
 import android.content.Intent;

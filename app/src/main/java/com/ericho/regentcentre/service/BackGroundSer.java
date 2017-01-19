@@ -1,4 +1,4 @@
-package com.ericho.regentcentre;
+package com.ericho.regentcentre.service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -10,15 +10,15 @@ import android.os.IBinder;
  * for project RegentCentre
  * package name com.ericho.regentcentre
  */
-public class BackGroudSer extends Service {
+public class BackGroundSer extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return new MyBinder();
     }
 
     public class MyBinder extends Binder{
-        public BackGroudSer getBinder(){
-            return BackGroudSer.this;
+        public BackGroundSer getBinder(){
+            return BackGroundSer.this;
         }
     }
 }
