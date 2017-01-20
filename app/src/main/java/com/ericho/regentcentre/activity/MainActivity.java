@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.ericho.regentcentre.R;
 import com.ericho.regentcentre.activity.BaseAct;
 import com.ericho.regentcentre.activity.LocationViewAct;
+import com.ericho.regentcentre.activity.ProgressDemoAct;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,12 +21,13 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseAct implements View.OnClickListener {
 
 	private static final String tag="MainActivity";
-	private static final int req_welcome = 0xc00001;
-	private static final int req_welcome2 = 0xc00002;
-	private static final int req_welcome3 = 0xc00003;
+	private static final int req_welcome = 100;
+	private static final int req_welcome2 = 102;
+	private static final int req_welcome3 = 103;
 	@BindView(R.id.btn1)
 	protected Button enterButton;
-	protected Button aboutButton;
+	@BindView(R.id.btn2)
+	protected Button btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -50,16 +52,25 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 	}
 
 	@Override
-	public void onClick(View p1){
-		startActivity(LocationViewAct.newIntent(this));
+	public void onClick(View v){
+		switch (v.getId()){
+			case R.id.btn1:
+				startActivity(LocationViewAct.newIntent(this));
+				break;
+			case R.id.btn2:
+				startActivity(ProgressDemoAct.newIntent(this));
+				break;
+		}
 	}
 
 
 
 	@Override
 	public void setMyView() {
+		enterButton.setOnClickListener(this);
+		btn2.setOnClickListener(this);
 
-
+		
 	}
 
 

@@ -38,6 +38,10 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <service android:name=".service.BackGroundSer"/>
         <service android:name=".service.LocationCheckingSer"/>
+		<activity
+            android:name=".activity.ProgressDemoAct"
+            />
+        
     </application>
 
 </manifest>

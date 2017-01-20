@@ -63,7 +63,7 @@ dependencies {
     compile 'com.facebook.stetho:stetho:1.3.1'
     compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
     compile 'org.greenrobot:eventbus:3.0.0'//for event handle in diff component
-
+    compile 'com.github.fenjuly:ArrowDownloadButton:9e15b85e8a'//a beautiful progress button
 
     testCompile 'junit:junit:4.12'
     // Optional -- Mockito framework
