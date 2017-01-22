@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ericho.regentcentre.R;
+import com.ericho.regentcentre.adapter.MyAdapter;
 import com.ericho.regentcentre.model.RouteObject;
 
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class CheckRouteScheduleFrag extends BaseFrag {
     private static final String tag = "CheckRouteScheduleFrag";
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
+    private MyAdapter adapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
     public static BaseFrag newInstance(){
@@ -63,7 +64,8 @@ public class CheckRouteScheduleFrag extends BaseFrag {
 
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
-
+        adapter = new MyAdapter(getActivity());
+        recyclerView.setAdapter(adapter);
     }
 
     private List<RouteObject> getRouteList() {

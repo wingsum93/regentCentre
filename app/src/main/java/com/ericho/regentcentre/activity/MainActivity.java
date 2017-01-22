@@ -24,10 +24,9 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 	private static final int req_welcome = 100;
 	private static final int req_welcome2 = 102;
 	private static final int req_welcome3 = 103;
-	@BindView(R.id.btn1)
-	protected Button enterButton;
-	@BindView(R.id.btn2)
-	protected Button btn2;
+	@BindView(R.id.btn1) protected Button enterButton;
+	@BindView(R.id.btn2) protected Button btn2;
+	@BindView(R.id.btn3) protected Button btn3;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -60,6 +59,9 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 			case R.id.btn2:
 				startActivity(ProgressDemoAct.newIntent(this));
 				break;
+			case R.id.btn3:
+				startActivity(new Intent(this,HoldAct.class));
+				break;
 		}
 	}
 
@@ -69,6 +71,7 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 	public void setMyView() {
 		enterButton.setOnClickListener(this);
 		btn2.setOnClickListener(this);
+		btn3.setOnClickListener(this);
 
 		
 	}

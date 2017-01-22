@@ -41,6 +41,9 @@
 		<activity
             android:name=".activity.ProgressDemoAct"
             />
+        <activity
+            android:name=".activity.HoldAct"
+            />
         
     </application>
 
