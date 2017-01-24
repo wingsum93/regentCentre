@@ -6,4 +6,8 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:id="@+id/text1"/>
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"/>
 </LinearLayout>

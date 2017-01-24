@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 
 import com.ericho.regentcentre.R;
 import com.ericho.regentcentre.adapter.BusScheduleAdapter;
-import com.ericho.regentcentre.adapter.MyAdapter;
 import com.ericho.regentcentre.model.RouteObject;
 
 import java.util.ArrayList;
@@ -67,13 +66,14 @@ public class CheckRouteScheduleFrag extends BaseFrag {
         mLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(mLayoutManager);
         List<String> strings = Arrays.asList("aaaa","aaadddd");
-        adapter = new BusScheduleAdapter(getActivity(),strings);
+        adapter = new BusScheduleAdapter(getActivity(),list);
         recyclerView.setAdapter(adapter);
     }
 
     private List<RouteObject> getRouteList() {
         List<RouteObject> res = new ArrayList<>();
-//        res.add(gen(new Date()))
+        res.add(gen(new Date(),"point A"));
+        res.add(gen(new Date(),"point C"));
         return res;
     }
     private RouteObject gen(Date startTime,String startPoint){
