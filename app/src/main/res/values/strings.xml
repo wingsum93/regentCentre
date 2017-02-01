@@ -9,4 +9,7 @@
         <item>v</item>
         <item>d</item>
     </string-array>
+
+
+    <string name="format_2_digit">%1$2d</string>
 </resources>

@@ -1,5 +1,7 @@
 package com.ericho.regentcentre.model;
 
+import com.ericho.regentcentre.inter.VehicleType;
+
 import java.util.Date;
 
 /**
@@ -12,11 +14,14 @@ public class RouteObject {
 
     private Date startTime;
     private String startPoint;
+    @VehicleType
+    private String vehicleType;
 
     public RouteObject(){}
-    public RouteObject(Date startTime,String startPoint){
+    public RouteObject(Date startTime,String startPoint,@VehicleType String vehicleType){
         this.startTime = startTime;
         this.startPoint = startPoint;
+        this.vehicleType = vehicleType;
     }
 
     public Date getStartTime() {
@@ -33,5 +38,13 @@ public class RouteObject {
 
     public void setStartPoint(String startPoint) {
         this.startPoint = startPoint;
+    }
+
+    public String getVehicleType() {
+        return vehicleType;
+    }
+
+    public void setVehicleType(String vehicleType) {
+        this.vehicleType = vehicleType;
     }
 }

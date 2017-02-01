@@ -22,7 +22,7 @@ import butterknife.BindView;
 
 public class BusScheduleAdapter extends BaseRecyclerAdapter<RouteObject,BusScheduleAdapter.ViewHolder>
     implements AdapterBeauty {
-    private SimpleDateFormat df = new SimpleDateFormat("hh:mm:ss");
+    private SimpleDateFormat df = new SimpleDateFormat("hh:mm");
     public BusScheduleAdapter(Context context, List<RouteObject> list) {
         super(context, list);
     }
@@ -36,8 +36,9 @@ public class BusScheduleAdapter extends BaseRecyclerAdapter<RouteObject,BusSched
     public void onBindViewHolder(ViewHolder holder, int position) {
         RouteObject i = getItem(position);
 
-        setText(holder.textView, i.getStartPoint());
-        setText(holder.textView2, getDateString(i.getStartTime()));
+        setText(holder.type, i.getVehicleType());
+        setText(holder.other, i.getStartPoint());
+        setText(holder.time, getDateString(i.getStartTime()));
     }
 
     @Override
@@ -57,10 +58,9 @@ public class BusScheduleAdapter extends BaseRecyclerAdapter<RouteObject,BusSched
 
 
     public static class ViewHolder extends BaseRecyclerAdapter.ViewHolder {
-        @BindView(R.id.text1)
-        TextView textView;
-        @BindView(R.id.text2)
-        TextView textView2;
+        @BindView(R.id.type) TextView type;
+        @BindView(R.id.time) TextView time;
+        @BindView(R.id.other) TextView other;
         public ViewHolder(View itemView) {
             super(itemView);
         }

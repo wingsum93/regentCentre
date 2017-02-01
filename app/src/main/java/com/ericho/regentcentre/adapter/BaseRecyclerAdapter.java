@@ -37,6 +37,9 @@ public abstract class BaseRecyclerAdapter<T,Holder extends RecyclerView.ViewHold
     public LayoutInflater getLayoutInflater(){
         return layoutInflater;
     }
+    public Context getContext(){
+        return context;
+    }
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
