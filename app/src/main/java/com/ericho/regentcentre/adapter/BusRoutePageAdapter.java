@@ -3,6 +3,8 @@ package com.ericho.regentcentre.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.ericho.regentcentre.annotation.Location;
 import com.ericho.regentcentre.fragment.CheckRouteScheduleFrag;
