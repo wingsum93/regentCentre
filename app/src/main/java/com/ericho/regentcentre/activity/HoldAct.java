@@ -2,11 +2,11 @@ package com.ericho.regentcentre.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 
 import com.ericho.regentcentre.ActivityListener;
 import com.ericho.regentcentre.R;
 import com.ericho.regentcentre.fragment.CheckRouteScheduleFrag;
+import com.ericho.regentcentre.annotation.Location;
 
 /**
  * Created by steve_000 on 22/1/2017.
@@ -26,7 +26,7 @@ public class HoldAct extends BaseHoldAct implements ActivityListener {
 
     @Override
     public void setMyView() {
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment,CheckRouteScheduleFrag.newInstance()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment,CheckRouteScheduleFrag.newInstance(Location.centre)).commit();
 
     }
 

@@ -5,5 +5,9 @@ package com.ericho.regentcentre.one;
  */
 
 public class Constant {
-
+    public static final String intent = "intent";
+    public static final String intent1 = "intent1";
+    public static final String intent2 = "intent2";
+    public static final String intent3 = "intent3";
+    public static final String intent4 = "intent4";
 }

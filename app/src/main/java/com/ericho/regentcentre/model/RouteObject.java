@@ -1,7 +1,7 @@
 package com.ericho.regentcentre.model;
 
-import com.ericho.regentcentre.inter.Location;
-import com.ericho.regentcentre.inter.VehicleType;
+import com.ericho.regentcentre.annotation.Location;
+import com.ericho.regentcentre.annotation.VehicleType;
 
 import java.util.Date;
 

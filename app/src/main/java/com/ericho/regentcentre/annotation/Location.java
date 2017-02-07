@@ -1,4 +1,4 @@
-package com.ericho.regentcentre.inter;
+package com.ericho.regentcentre.annotation;
 
 /**
  * Created by EricH on 7/2/2017.
