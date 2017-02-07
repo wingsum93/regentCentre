@@ -7,6 +7,6 @@ package com.ericho.regentcentre.inter;
  */
 
 public @interface VehicleType {
-    public String normal = "normal";
-    public String big = "big";
+    String normal = "normal";
+    String big = "big";
 }
