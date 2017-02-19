@@ -21,9 +21,13 @@ public class RouteGenerator {
             case 1://sunday
                 return new ArrayList<>();
             case 2:
+                return getWeekDayRouteList(fromLoc);
             case 3:
+                return getWeekDayRouteList(fromLoc);
             case 4:
+                return getWeekDayRouteList(fromLoc);
             case 5:
+                return getWeekDayRouteList(fromLoc);
             case 6:
                 return getWeekDayRouteList(fromLoc);
             case 7:
