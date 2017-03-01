@@ -20,8 +20,7 @@ import butterknife.BindView;
  * Created by EricH on 24/1/2017.
  */
 
-public class BusScheduleAdapter extends BaseRecyclerAdapter<RouteObject,BusScheduleAdapter.ViewHolder>
-    implements AdapterBeauty {
+public class BusScheduleAdapter extends BaseRecyclerAdapter<RouteObject,BusScheduleAdapter.ViewHolder> {
     private SimpleDateFormat df = new SimpleDateFormat("hh:mm");
     public BusScheduleAdapter(Context context, List<RouteObject> list) {
         super(context, list);
@@ -41,13 +40,7 @@ public class BusScheduleAdapter extends BaseRecyclerAdapter<RouteObject,BusSched
         setText(holder.time, getDateString(i.getStartTime()));
     }
 
-    @Override
-    public void setText(TextView textView, String s) {
-        if (s == null) {
-            s = "";
-        }
-        textView.setText(s);
-    }
+
     private @Nullable String getDateString(Date date){
         if (date == null) {
             return null;

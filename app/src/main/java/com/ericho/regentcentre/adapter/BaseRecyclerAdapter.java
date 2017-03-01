@@ -6,6 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.ericho.regentcentre.inter.AdapterBeauty;
 
 import java.util.List;
 
@@ -16,7 +19,7 @@ import butterknife.ButterKnife;
  */
 
 public abstract class BaseRecyclerAdapter<T,Holder extends RecyclerView.ViewHolder>
-        extends RecyclerView.Adapter<Holder> {
+        extends RecyclerView.Adapter<Holder> implements AdapterBeauty{
     List<T> items;
     List<T> filterItems;
     private Context context;
@@ -41,6 +44,13 @@ public abstract class BaseRecyclerAdapter<T,Holder extends RecyclerView.ViewHold
         return context;
     }
 
+    @Override
+    public void setText(TextView textView, String s) {
+        if (s == null) {
+            s = "";
+        }
+        textView.setText(s);
+    }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public ViewHolder(View itemView) {
