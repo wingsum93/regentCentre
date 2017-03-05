@@ -81,5 +81,14 @@ public class CheckRouteScheduleFrag extends BaseFrag {
     }
 
 
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        Log.d(tag, "on query test submit");
+        return true;
+    }
 
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
+    }
 }

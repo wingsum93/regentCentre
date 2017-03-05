@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.View;
 
@@ -14,7 +15,7 @@ import com.ericho.regentcentre.ActivityListener;
  * Created by EricH on 20/12/2016.
  */
 
-public abstract class BaseFrag extends Fragment {
+public abstract class BaseFrag extends Fragment implements SearchView.OnQueryTextListener{
     private static final String tag = "BaseFrag";
     private ActivityListener activityListener;
     @Override
