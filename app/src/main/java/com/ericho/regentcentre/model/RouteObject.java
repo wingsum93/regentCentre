@@ -2,6 +2,7 @@ package com.ericho.regentcentre.model;
 
 import com.ericho.regentcentre.annotation.Location;
 import com.ericho.regentcentre.annotation.VehicleType;
+import com.orm.SugarRecord;
 
 import org.xutils.db.annotation.Column;
 import org.xutils.db.annotation.Table;
@@ -14,7 +15,7 @@ import java.util.Date;
  * package name com.ericho.regentcentre.model
  */
 @Table(name = "Route")
-public class RouteObject {
+public class RouteObject extends SugarRecord {
     @Column(name = "startTime")
     private Date startTime;
     @Location
