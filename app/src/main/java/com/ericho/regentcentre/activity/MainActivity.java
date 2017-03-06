@@ -28,6 +28,7 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 	@BindView(R.id.btn2) protected Button btn2;
 	@BindView(R.id.btn3) protected Button btn3;
 	@BindView(R.id.btn4) protected Button btn4;
+	@BindView(R.id.btn5) protected Button btn5;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -66,6 +67,9 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 			case R.id.btn4:
 				startActivity(new Intent(this,RouteAct.class));
 				break;
+			case R.id.btn5:
+				startActivity(new Intent(this,SettingsActivity.class));
+				break;
 		}
 	}
 
@@ -77,6 +81,7 @@ public class MainActivity extends BaseAct implements View.OnClickListener {
 		btn2.setOnClickListener(this);
 		btn3.setOnClickListener(this);
 		btn4.setOnClickListener(this);
+		btn5.setOnClickListener(this);
 
 		
 	}

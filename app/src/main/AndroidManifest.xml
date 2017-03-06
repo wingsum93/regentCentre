@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ericho.regentcentre" >
+    package="com.ericho.regentcentre">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".RegentCentreApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:name=".RegentCentreApp"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -30,28 +29,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.LocationViewAct"
-            />
-        <activity
-            android:name=".activity.RouteAct"
-            />
+        <activity android:name=".activity.LocationViewAct" />
+        <activity android:name=".activity.RouteAct" />
         <activity
             android:name=".activity.WelcomeAct"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <service android:name=".service.BackGroundSer"/>
-        <service android:name=".service.LocationCheckingSer"/>
-		<activity
-            android:name=".activity.ProgressDemoAct"
-            />
-        <activity
-            android:name=".activity.HoldAct">
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".service.BackGroundSer" />
+        <service android:name=".service.LocationCheckingSer" />
+
+        <activity android:name=".activity.ProgressDemoAct" />
+        <activity android:name=".activity.HoldAct">
             <meta-data
                 android:name="android.app.searchable"
-                android:resource="@xml/searchable">
-            </meta-data>
+                android:resource="@xml/searchable"></meta-data>
         </activity>
-        
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>
