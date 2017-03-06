@@ -3,6 +3,9 @@ package com.ericho.regentcentre.model;
 import com.ericho.regentcentre.annotation.Location;
 import com.ericho.regentcentre.annotation.VehicleType;
 
+import org.xutils.db.annotation.Column;
+import org.xutils.db.annotation.Table;
+
 import java.util.Date;
 
 /**
@@ -10,13 +13,15 @@ import java.util.Date;
  * for project RegentCentre
  * package name com.ericho.regentcentre.model
  */
-
+@Table(name = "Route")
 public class RouteObject {
-
+    @Column(name = "startTime")
     private Date startTime;
     @Location
+    @Column(name = "startPoint")
     private String startPoint;
     @VehicleType
+    @Column(name = "vehicleType")
     private String vehicleType;
 
     public RouteObject(){}

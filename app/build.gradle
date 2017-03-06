@@ -3,7 +3,7 @@ apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion '24.0.3'
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.ericho.regentcentre"
